@@ -2,13 +2,14 @@
   "name": "nodejs-1",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple practice project for clg",
   "main": "index1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index1.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "vishnu",
   "license": "ISC",
   "dependencies": {
     "express": "^5.2.1"
