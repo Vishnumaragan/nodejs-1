@@ -8,3 +8,7 @@ app.get('/', (req,res)=> {
     console.log(req.url);
     res.send("Hey this is my first server !!!");
 });
+app.get('/home', (req,res)=> {
+    console.log(req.url);
+    res.send("This is the home page");
+});
