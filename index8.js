@@ -25,12 +25,15 @@ app.get("/", (request, response) => {
 
 app.post("/", (request, response) => {
   //   console.log(request.body);
-  const user = request.body.name;
+  const user = request.body
   users.push(user);
   response.json(users);
 });
 
-app.delete("/:id", (request, response) => {});
+app.delete("/:id", (request, response) => {
+    users = users.filter((user) => user.id !== Number(req.params.id))
+    res.json(users)
+});
 
 app.get("/:id", (request, response) => {
   const user = users.find((user) => user.id === Number(request.params.id));
