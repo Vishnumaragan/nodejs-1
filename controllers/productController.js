@@ -1,5 +1,6 @@
+import { products } from "../models/productModel.js";
 const getProducts = (req, res) => {
-  res.send("This is get request of product");
+  res.json(products)
 };
 
 const addProduct = (req, res) => {
