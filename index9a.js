@@ -9,16 +9,12 @@ const auth = (req, res, next) => {
     if(tokenValue[1] === token) next()
     else res.send("unauthrized")
 };
-
 app.get("/", auth,(req, res) => {
     res.send("Welcome");
 });
-
 app.post("/login", (req, res) => {
-    res.send(token)
+        res.send(token)
 })
-
-
 app.listen(8080, () => {
   console.log("server is live");
 });
